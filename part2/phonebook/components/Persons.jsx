@@ -1,4 +1,4 @@
-const Perosns = ({ persons, handleDelete }) => {
+const Persons = ({ persons, handleDelete }) => {
   const handleOnClick = () => {};
   return (
     <div>
@@ -16,4 +16,4 @@ const Perosns = ({ persons, handleDelete }) => {
     </div>
   );
 };
-export default Perosns;
+export default Persons;

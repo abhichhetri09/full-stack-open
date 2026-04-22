@@ -13,6 +13,7 @@ morgan.token("body", (req) => JSON.stringify(req.body));
 const format =
   ":method :url :status :res[content-length] - :response-time ms :body";
 app.use(morgan(format));
+
 let phoneBook = [
   {
     id: "1",
@@ -83,7 +84,7 @@ app.post("/api/persons", (request, response) => {
   response.json(newPerson);
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
